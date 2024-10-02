@@ -3,6 +3,12 @@
 This is a demo for a lunch & learn session @Starship.
 One of the main goals was to showcase the key differences between certain DOM manipulation techniques. 
 
+## How to run
+
+- **Variant 1:** Open the respective `.html` file in your browser
+  - fetching the `mocks/default.json` will fail
+- **Variant 2:** `npx serve ./`
+
 ## Outstanding items
 
 - [ ] Cleanup and check-in the less performant version
