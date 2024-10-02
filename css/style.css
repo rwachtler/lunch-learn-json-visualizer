@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: #333;
+    --slow-color: red;
+
+    --node-background-color: #f0f0f0;
+    --leaf-background-color: #cccccc;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 64px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin: 0.5em 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid var(--secondary-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+
+    &.slow {
+        background-color: var(--slow-color);
+    }
+}
+
+main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 4px;
+    background-color: var(--primary-color);
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+section {
+    background: var(--secondary-color);
+}
+
+p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+p.value {
+    font-size: small;
+    background-color: var(--secondary-color);
+    padding: 4px 8px;
+    margin-left: 4px;
+}
+
+pre {
+    display: flex;
+    margin: 0;
+}
+
+pre, code {
+    height: 100%;
+}
+
+code {
+    outline: none;
+    display: block;
+    flex: 1;
+    padding: 8px;
+}
+
+#file-input {
+    display: none;
+}
+
+.node {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--tertiary-color);
+    background: var(--node-background-color);
+}
+
+.leaf {
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--tertiary-color);
+    background: var(--leaf-background-color);
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.key-value-pair {
+    display: flex;
+   align-items: center;
+}
+
+.separator {
+    margin: 0 8px;
+    border: 1px dashed var(--tertiary-color);
+}

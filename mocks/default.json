@@ -1,0 +1,43 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "isActive": true,
+        "cards": [
+          {
+            "id": 1,
+            "cardNumber": "1234 5678 9012 3456",
+            "isActive": true
+          },
+          {
+            "id": 2,
+            "cardNumber": "6543 2109 8765 4321",
+            "isActive": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "isActive": false,
+        "cards": []
+      }
+    ],
+    "products": [
+      {
+        "id": 101,
+        "name": "Laptop",
+        "price": 999.99,
+        "inStock": true
+      },
+      {
+        "id": 102,
+        "name": "Smartphone",
+        "price": 499.99,
+        "inStock": false
+      }
+    ]
+  }

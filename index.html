@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON explorer - vanilla JS DOM manipulation</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <button id="load-json-file_button">Load JSON file</button>
+      <button id="use-mock-data_button">Use mock JSON file</button>
+      <button id="run-from-editor_button">Run</button>
+      <button id="clear_button">Clear</button>
+    </nav>
+    <main>
+      <section id="edit-area">
+        <pre>
+                <code id="json-editor" contenteditable="true" spellcheck="false"></code>
+            </pre>
+      </section>
+      <section id="explorer"></section>
+    </main>
+    <template id="node_template">
+      <div class="node">
+        <code class="key"></code>
+      </div>
+    </template>
+    <template id="leaf_template">
+      <div class="leaf">
+        <div class="key-value-pair">
+          <code class="key"></code>
+          <p class="value"></p>
+        </div>
+        <code class="type"></code>
+      </div>
+    </template>
+    <template id="separator_template">
+      <div class="separator"></div>
+    </template>
+    <input accept="application/json" type="file" id="file-input" />
+  </body>
+  <script src="js/script.js"></script>
+</html>
